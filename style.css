@@ -1,0 +1,20 @@
+/* Escopo global */
+:root {
+  --cor-padrao: red;
+  --fonte-padrao: 20px;
+}
+
+h2, h3, p {
+  color: var(--cor-padrao, red);
+  font-size: var(--fonte-padrao, 20px);
+}
+
+
+/* Escopo local */
+span {
+  --cor-padrao: blue;
+  --fonte-padrao: 40px;
+  color: var(--cor-padrao);
+  font-size: var(--fonte-padrao);
+  
+}
